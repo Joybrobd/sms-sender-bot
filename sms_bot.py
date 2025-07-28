@@ -12,7 +12,7 @@ from filter import load_bad_words, contains_bad_word
 
 # === CONFIG ===
 BOT_TOKEN = "8206814818:AAFjR0I1iyWedDf9pIVP8kkrR0rXnIoD-Mw"
-API_KEY = "baraa111"
+API_KEY = "parvej"
 BASE_URL = "https://hl-hadi.info.gf/cmsg/api.php"
 
 # === STATES ===
@@ -45,7 +45,7 @@ async def get_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Check for bad words
     if contains_bad_word(message, bad_words):
-        await update.message.reply_text("অভদ্র মেসেজ সেন্ড করা যাবে না। খারাপ ভাষা ইউজ করছো 😤")
+        await update.message.reply_text("অভদ্র ছেলে তোমার মেসেজ সেন্ড করা যাবে না। খারাপ ভাষা ইউজ করছো 😤")
         return ConversationHandler.END
 
     # Prepare params for API call
